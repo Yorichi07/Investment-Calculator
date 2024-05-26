@@ -5,8 +5,8 @@ import { InvestmentService } from '../investment.service';
 
 @Component({
   selector: 'app-user-input',
-  standalone: true,
-  imports: [FormsModule],
+  standalone: false,
+  //imports: [FormsModule],
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.css',
 })
@@ -34,7 +34,7 @@ export class UserInputComponent {
       expectedReturn: +this.enteredExpectedReturn(),
       annualInvestment: +this.enteredAnnualInvestment(),
     });
-    
+
     // this.calculate.emit({
     //   initialInvestment: +this.enteredInitialInvestment(),
     //   duration: +this.enteredDuration(),

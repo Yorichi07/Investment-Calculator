@@ -12,7 +12,7 @@ export class InvestmentService {
   //     totalAmountInvested: number;
   //   }[];
 
-  resultsData = signal<
+  resultData = signal<
     | {
         year: number;
         interest: number;
@@ -45,7 +45,7 @@ export class InvestmentService {
         totalAmountInvested: initialInvestment + annualInvestment * year,
       });
     }
-    // this.resultsData = annualData;
-    this.resultsData.set(annualData);
+    // this.resultData = annualData;
+    this.resultData.set(annualData);
   }
 }
